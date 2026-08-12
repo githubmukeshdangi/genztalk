@@ -1,4 +1,4 @@
 export default {
-    baseURL: 'http://192.168.1.117:8000',
+    baseURL: 'http://192.168.1.107:8000',
   
 }

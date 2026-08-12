@@ -1,4 +1,5 @@
 type RootStackParams ={
     login: undefined,
-    signup: undefined
+    signup: undefined,
+    homeScreen: undefined
 }

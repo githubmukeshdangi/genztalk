@@ -15,6 +15,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { useNavigation } from '@react-navigation/native';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import styles from './login.style';
+import { axiosInstace } from '../../services/api';
 
 const Login = () => {
   const [loginState, setLoginState] = useState<LoginStateProps>({
@@ -50,6 +51,9 @@ const Login = () => {
       password: text,
     });
   };
+  const onRegister = () => {
+    navigation.navigate('signup');
+  }
 
   const onLogin = () => {
     const email = loginState.email.trim();
@@ -62,11 +66,22 @@ const Login = () => {
     } else if (!password) {
       Alert.alert('Please enter password');
     } else {
-      navigation.navigate('signup');
+     loginApi()
     }
   };
-  const onRegister =  () =>{
-    navigation.navigate('signup')
+  const loginApi =  async() =>{
+    const formData = {
+      email:loginState.email,
+      password:loginState.password
+    }
+    console.log("formData",formData)
+    try {
+       const {data} = await axiosInstace.post('/login',formData)
+       console.log("data",data)
+       navigation.navigate('homeScreen')
+    } catch (error:any) {
+      Alert.alert('error',error.response?.data?.message);
+    }
   }
 
   return (
