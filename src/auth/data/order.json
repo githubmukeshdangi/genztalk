@@ -1,0 +1,111 @@
+[
+  {
+    "id": "ORD1001",
+    "customerName": "Rahul Sharma",
+    "totalAmount": 540,
+    "status": "Pending",
+    "items": [
+      { "id": "1", "name": "Paneer Tikka", "quantity": 2, "price": 180 },
+      { "id": "2", "name": "Butter Naan", "quantity": 3, "price": 60 }
+    ]
+  },
+  {
+    "id": "ORD1002",
+    "customerName": "Amit Verma",
+    "totalAmount": 420,
+    "status": "In Progress",
+    "items": [
+      { "id": "3", "name": "Veg Biryani", "quantity": 2, "price": 210 }
+    ]
+  },
+  {
+    "id": "ORD1003",
+    "customerName": "Priya Singh",
+    "totalAmount": 760,
+    "status": "Completed",
+    "items": [
+      { "id": "4", "name": "Pizza", "quantity": 2, "price": 380 }
+    ]
+  },
+  {
+    "id": "ORD1004",
+    "customerName": "Anjali Gupta",
+    "totalAmount": 310,
+    "status": "Pending",
+    "items": [
+      { "id": "5", "name": "Burger", "quantity": 2, "price": 155 }
+    ]
+  },
+  {
+    "id": "ORD1005",
+    "customerName": "Vikas Yadav",
+    "totalAmount": 890,
+    "status": "Completed",
+    "items": [
+      { "id": "6", "name": "South Indian Combo", "quantity": 2, "price": 445 }
+    ]
+  },
+  {
+    "id": "ORD1006",
+    "customerName": "Neha Jain",
+    "totalAmount": 670,
+    "status": "In Progress",
+    "items": [
+      { "id": "7", "name": "Pasta", "quantity": 2, "price": 335 }
+    ]
+  },
+  {
+    "id": "ORD1007",
+    "customerName": "Suresh Patel",
+    "totalAmount": 250,
+    "status": "Pending",
+    "items": [
+      { "id": "8", "name": "Sandwich", "quantity": 2, "price": 125 }
+    ]
+  },
+  {
+    "id": "ORD1008",
+    "customerName": "Riya Kapoor",
+    "totalAmount": 950,
+    "status": "Completed",
+    "items": [
+      { "id": "9", "name": "Family Combo", "quantity": 1, "price": 950 }
+    ]
+  },
+  {
+    "id": "ORD1009",
+    "customerName": "Arjun Mehta",
+    "totalAmount": 430,
+    "status": "Pending",
+    "items": [
+      { "id": "10", "name": "Fried Rice", "quantity": 2, "price": 215 }
+    ]
+  },
+  {
+    "id": "ORD1010",
+    "customerName": "Sneha Joshi",
+    "totalAmount": 720,
+    "status": "In Progress",
+    "items": [
+      { "id": "11", "name": "Chole Bhature", "quantity": 3, "price": 240 }
+    ]
+  },
+  {
+    "id": "ORD1011",
+    "customerName": "Karan Malhotra",
+    "totalAmount": 510,
+    "status": "Completed",
+    "items": [
+      { "id": "12", "name": "Dal Makhani", "quantity": 2, "price": 255 }
+    ]
+  },
+  {
+    "id": "ORD1012",
+    "customerName": "Pooja Arora",
+    "totalAmount": 640,
+    "status": "Pending",
+    "items": [
+      { "id": "13", "name": "Veg Thali", "quantity": 2, "price": 320 }
+    ]
+  }
+]

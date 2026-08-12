@@ -1,4 +1,4 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+<!-- This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
 # Getting Started
 
@@ -94,4 +94,133 @@ To learn more about React Native, take a look at the following resources:
 - [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
 - [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
 - [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native. -->
+
+# Restaurant Partner App
+
+A simple React Native application built for restaurant owners to manage recent orders.
+
+## Features
+
+- Login with hardcoded credentials
+- View recent orders
+- Search orders by Order ID or Customer Name
+- Filter orders by status
+- View order details
+- Update order status
+- Persist order status using AsyncStorage
+
+---
+
+## Tech Stack
+
+- React Native CLI
+- TypeScript
+- Redux Toolkit
+- React Navigation
+- AsyncStorage
+
+---
+
+## Login Credentials
+
+Email:
+owner@dummy.com
+
+Password:
+password123
+
+---
+
+## Project Structure
+
+src/
+│
+├── data/
+│ └── orders.json
+│
+├── redux/
+│ ├── appSlice.ts
+│ └── store.ts
+│
+├── screens/
+│ ├── LoginScreen.tsx
+│ ├── OrdersScreen.tsx
+│ └── OrderDetailScreen.tsx
+│
+├── hooks/
+│ └── reduxHooks.ts
+│
+├── types/
+│ └── order.ts
+│
+└── utils/
+    └── constants.ts
+
+---
+
+## Architecture
+
+The application follows a simple and scalable architecture.
+
+- Redux Toolkit is used for global state management.
+- React Navigation manages screen navigation.
+- AsyncStorage persists order data so status changes remain after restarting the app.
+- Orders are initially loaded from a local JSON file and then stored in AsyncStorage.
+- Search and filtering are computed using useMemo to reduce unnecessary calculations.
+- FlatList is optimized using keyExtractor, useCallback, React.memo-ready components, and rendering props for better performance.
+
+---
+
+## How to Run
+
+### 1. Install dependencies
+
+```bash
+npm install
+```
+
+### 2. Android
+
+Start Metro
+
+```bash
+npm start
+```
+
+Open another terminal
+
+```bash
+npx react-native run-android
+```
+
+### 3. iOS
+
+```bash
+cd ios
+pod install
+```
+
+```bash
+npx react-native run-ios
+```
+
+---
+
+## Future Improvements
+
+- Authentication API integration
+- Backend integration
+- Pagination
+- Pull to Refresh
+- Unit Testing
+- Dark Mode
+- Better UI/UX
+- Reusable UI components
+- Network error handling
+
+---
+
+## Time Spent
+
+Approximately **4–5 hours**.
